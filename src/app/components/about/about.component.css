@@ -1,0 +1,128 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .about-container {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    gap: 30px;
+  }
+  
+  .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-content h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .about-content h2 {
+    font-size: 1.4rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  
+  .about-content p {
+    font-size: 1rem;
+    color: #777;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .typing-animation {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    display: inline-block;
+    width: 0;
+    overflow: hidden; 
+    white-space: nowrap;
+    border-right: 2px solid #333;
+    animation: typing 4s steps(var(--steps, 20)) infinite, blink 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: var(--width, 0ch);
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+    100% {
+      border-color: #333;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about {
+      padding: 30px 20px;
+    }
+    .about-container {
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .about-content h1 {
+      font-size: 1.8rem;
+    }
+  
+    .about-content h2 {
+      font-size: 1.2rem;
+    }
+  
+    .about-content p {
+      font-size: 0.95rem;
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-container {
+      padding: 15px;
+    }
+  
+    .profile-pic {
+      width: 90px;
+      height: 90px;
+    }
+  
+    .about-content h1 {
+      font-size: 1.6rem;
+    }
+  
+    .about-content h2 {
+      font-size: 1.1rem;
+    }
+  
+    .about-content p {
+      font-size: 0.9rem;
+      padding: 0 5px;
+    }
+  }

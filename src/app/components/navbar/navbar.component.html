@@ -1,0 +1,13 @@
+<nav class="navbar" [ngClass]="{'active': isNavbarActive}">
+  <div class="hamburger" (click)="toggleNavbar()">
+    <span *ngIf="!isNavbarActive">&#9776;</span>
+    <span *ngIf="isNavbarActive">&#10006;</span>
+  </div>
+
+  <div class="navbar-links">
+    <a href="#about" (click)="toggleNavbar()">About Me</a>
+    <a href="#skills" (click)="toggleNavbar()">Tech Stack</a>
+    <a href="#projects" (click)="toggleNavbar()">Projects</a>
+    <a href="#contact" (click)="toggleNavbar()">Contact</a>
+  </div>
+</nav>
