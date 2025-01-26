@@ -1,12 +1,14 @@
 {
   "name": "portfolio",
   "version": "0.0.0",
+  "homepage": "https://Selma-Bajramovic.github.io/portfolio",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "gh-pages -d dist/portfolio"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +29,7 @@
     "@angular/cli": "^19.1.4",
     "@angular/compiler-cli": "^19.1.0",
     "@types/jasmine": "~5.1.0",
+    "gh-pages": "^6.3.0",
     "jasmine-core": "~5.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
