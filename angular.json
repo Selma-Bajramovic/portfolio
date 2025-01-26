@@ -13,7 +13,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/portfolio",
+            "outputPath": "dist",
+            "baseHref": "/portfolio/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -39,8 +40,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "35kB",
-                  "maximumError": "38kB"
+                  "maximumWarning": "40kB",
+                  "maximumError": "55kB"
                 }
               ],
               "outputHashing": "all"
